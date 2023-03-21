@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/unidad7.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- archivo css bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- FIN CSS Bootstrap-->
+    <link rel="stylesheet" href="css/unidad6.css">
+    <!-- tipografia google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- iconos-->
+    <link rel="stylesheet" href="iconos.css">
+    <!--fin iconos-->
+    <title>Serendipia</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="marca" src="img5/LOGO.png" alt="IconoDeMarca">
+        </div>
+        <div class="nav_order">
+            <nav id="btn_hamburguesa">
+                <a onclick="btnHambur()"><span class="icon-menu"></span></a>
+            </nav>
+            <nav id="btnes_scroll" style="display:block;">
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#pesoideal">Tu peso</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="layer" class="ajustar_img"></section>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<seguire agregando secciones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <section id="nosotros">
+        <div class="titles">
+            <h1>Nosotros</h1>
+        </div>
+        <div class="cont_us">
+            <div class="">
+                <div id="img_col_izq">
+                    <img class="img_story" src="img5/serendipia2.jpeg" alt="vegan">
+                </div>
+            </div>
+            <div class="txt_us">
+                <div>
+                    <h2 class="subtitle">Serendipia</h2>
+                </div>
+                <div>
+                    <h5> Una marca nacida del amor y el placer de preparar y disfrutar de
+                        comidas veganas. Creemos firmemente que todos deben poder disfrutar de esta opción desde sus
+                        casas,
+                        así que decidimos materializar todo lo que nos motiva en una marca y un nombre que refleja
+                        nuestro
+                        principio.
+
+                        Nuestro objetivo es ser parte de tu serendipia alimentaria, ofreciéndote una opción saludable,
+                        sostenible y nutritiva para llenar tu cocina y tu corazón. ¡Gracias por darnos la oportunidad de
+                        ayudarte a llevar alimentos saludables a tu mesa!
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    <section id="history">
+        <div class="cont_us">
+            <div class="txt_us">
+                <div>
+                    <h3 class="subtitle">Historia del veganismo</h3>
+                </div>
+                <div class="txt_us">
+                    <p>
+                        El veganismo es un movimiento que busca respetar los derechos de los animales y eliminar
+                        los productos de origen animal de la dieta y el estilo de vida. Se originó en Gran Bretaña
+                        en la década de 1940 y se basa en el principio de que los animales tienen derechos. Esto
+                        implica una dieta estrictamente vegetariana, y la abstención de productos como la lana,
+                        la piel, la seda y el cuero. El veganismo también se extiende a la industria de los cosméticos
+                        y productos de limpieza, donde los veganos intentan evitar los productos que contengan
+                        ingredientes animales o que se hayan probado en animales. Esta filosofía también se aplica
+                        al entretenimiento, la moda y la decoración, donde los veganos evitan usar animales vivos
+                        para fines artísticos o decorativos. El veganismo se ha vuelto cada vez más popular y hay
+                        una amplia gama de productos veganos disponibles para aquellos que desean seguir esta filosofía.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img class="img_story" src="./img5/story.jpg" alt="Veganismo">
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <section id="productos">
+        <div class="titles">
+            <h2>Nuestros Productos</h2>
+        </div>
+        <div id="imagenes_portada">
+            <div class="container-fluid" id="contenedor_carousel">
+                <!--inicio carousel-->
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide d-flex justify-content-center">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner ajustar_img_carousel">
+                        <div class="carousel-item active ">
+                            <img src="img5/productos/mila_rellena.jpg" class="d-block w-100" alt="mila_rellena">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img5/productos/mila_soja.jpg" class="d-block w-100" alt="mila_soja">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img5/productos/medallon_lenteja.jpg" class="d-block w-100" alt="medallon_lenteja">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img5/productos/empanada.jpeg" class="d-block w-100" alt="empanada">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img5/productos/empanada_integral.jpg" class="d-block w-100"
+                                alt="empanada_integral">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img5/productos/dumpling.jpg" class="d-block w-100" alt="dumpling">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin carousel-->
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <!-- <section id="pesoideal">
+            <div>
+                <script type="text/javascript">
+                    document.write('<h2>' + titulopeso + '</h2>')
+                    document.write('<p>Nombre: ' + nombre + '</p>')
+                    document.write('<p>Peso: ' + peso + '</p>')
+                    document.write('<p>Altura: ' + altura + '</p>')
+                    document.write('<p>Años: ' + edad + '</p>')
+                    document.write('<p>Peso deseable: ' + pesoideal + '</p>')
+
+                </script>
+            </div>
+        </section> -->
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <section id="info">
+        <div class="titles">
+            <h2>Información nutricional</h2>
+        </div>
+        <div class="container d-flex justify-content-center " id="box_info">
+            <div class="txt">
+                <div class="img_txt">
+                    <img src="img5/legumbre.jpg" alt="legumbre" class="imgfluid">
+                </div>
+                <p>Vegetarianos y veganos no pueden dejar de comer legumbres, cereales, soya y quinoa, ya que
+                    corresponderá al aporte proteico de su dieta. “La mejor alternativa para aportar proteínas para
+                    el caso de los veganos es la ingesta de legumbres combinadas con cereales, soya y quinoa</p>
+            </div>
+            <div class="txt">
+                <div class="img_txt">
+                    <img src="img5/semillas.jpg" alt="semillas" class="imgfluid">
+                </div>
+                <p>Fuente de omega 3, esencial para el control del colesterol, y ricas en fibra, que facilita el
+                    tránsito intestinal, las semillas son alimentos funcionales, considerados beneficiosos para la
+                    salud sobre todo por su carácter preventivo en ciertas enfermedades.</p>
+            </div>
+            <div class="txt">
+                <div class="img_txt">
+                    <img src="img5/calcio.jpg" alt="calcio" class="imgfluid">
+                </div>
+                <p>Algunos fclasstos secos como las almendras o las avellanas, también contienen mucho calcio. No
+                    obstante, la ración habitual suele ser inferior a la de un plato de espinacas o de alubias. Un
+                    puñado de almendras -que pesa unos 15-20 gramos- proporciona 42 mg de calcio</p>
+            </div>
+            <div class="txt">
+                <div class="img_txt">
+                    <img src="img5/frutas.jpg" alt="frutas" class="imgfluid">
+                </div>
+                <p>Proporcionan un importante aporte vitamínico (vitaminas A, C, B1, B2, B6, ácido fólico) y mineral
+                    (potasio, hierro, calcio, magnesio, sílice, zinc, sulfatos, fosfatos, cloruros). Aportan fibra,
+                    principalmente celulosa y pectinas. La mayoría tienen un alto contenido de agua que oscila entre
+                    un 80 y 95 por ciento.</p>
+            </div>
+        </div>
+    </section>
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<modelo de cajas bootstrap>>>>>>>>>>>>>>>>>>>>-->
+    <section class="cajabootstrap " id="contacto">
+        <div class="titles">
+            <h2>Te invitamos a que nos escribas</h2>
+        </div>
+        <div class="container-fluid mt-5" id="contenedorboot">
+            <div class="row" id="modulo1">
+                <div class="col-lg-4 col-md-2 col-sm-4 col-xl-4" id="columna1">
+                    <img src="img5/escribir.jpg" alt="write us" id="img_contacto">
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-8 col-xl-8" id="columna2">
+                    <form>
+                        <input type="text" name="nombre" placeholder="Nombre y Apellido"
+                            class="form-control espacio_inferior" required>
+                        <input type="mail" name="Email" placeholder="Email" class="form-control espacio_inferior"
+                            required>
+                        <textarea placeholder="deja tu mensaje" rows="6" class="form-control espacio_inferior"
+                            required></textarea>
+                        <input type="submit" class="btn btn_primario mt-5">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--<<<<<<>><>>>>>>>>>>>>>>>>>>>>>>><<<<<fin modelo de cajas bootstrap<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+    <footer class="piecontacto">
+        <div class="contacto iconos-redes">
+            <i class="icon-facebook "><a href="https://www.facebook.com/serendipiacomidavegana">Facebook</a></i>
+            <i class="icon-instagram"><a href="https://www.instagram.com/serendipiacomidavegana/">Instagram</a></i>
+            <i class="icon-whatsapp"><a href="https://web.whatsapp.com/">Whatsapp</a></i>
+        </div>
+    </footer>
+    <section>
+        <p class="copyright">Copyright 2023© Serendipia.</p>
+        <p class="copyright">Todos los derechos reservados </p>
+        <div class="d-flex justify-content-end ">
+            <p> Diseño Web por: <a id="mi_nombre" href="https://luisao86.github.io/"> Luis Funes</a></p>
+    </section>
+    </div>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <script type="text/javascript" src="js/boton_hamburguesa.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
