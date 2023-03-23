@@ -46,10 +46,15 @@ header {
       max-width: 100vw;
       height: 50px;
       background-color: var(--secundario);
-
       font-family: 'Open Sans', sans-serif;
       margin-top: 0;
+      display: flex;
+      justify-content: space-between;
 
+}
+
+.btn_open, .btn_close{
+      display: none;
 }
 
 .titles {
@@ -111,11 +116,7 @@ img {
       top: 0;
 }
 
-#btn_hamburguesa {
-      display: none;
-}
-
-#btnes_scroll {
+.btnes_scroll {
       height: 100%;
       width: 60vw;
       float: right;
@@ -125,17 +126,17 @@ img {
 
 }
 
-#btnes_scroll ul li a:hover {
+.btnes_scroll ul li a:hover {
       background-color: #BFA594;
       color: var(--bgcolor);
 }
 
-#btnes_scroll ul li a:active {
+.btnes_scroll ul li a:active {
       background-color: var(--quinto);
       color: var(--bgcolor);
 }
 
-#btnes_scroll ul {
+.btnes_scroll ul {
       padding: 0;
       margin: 0;
       list-style-type: none;
@@ -144,22 +145,22 @@ img {
 
 }
 
-#btnes_scroll ul li {
+.btnes_scroll ul li {
       display: inline;
       height: 100%;
 }
 
-#btnes_scroll ul li a {
+.btnes_scroll ul li a {
       display: inline-block;
       width: 10vw;
       height: 100%;
       line-height: 30px;
       text-align: center;
       text-decoration: none;
+      font-family: sans-serif;
       font-size: 1.5vw;
       color: var(--bgcolor);
       background-color: var();
-      border-right: 2px solid var(--cuarto);
       padding: 1.2vh;
 
 }
@@ -244,9 +245,21 @@ img {
       text-align: left;
 }
 
+.cont_us2 {
+      max-width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+}
+
+.order {
+      text-align: justify;
+}
+
 .txt_us {
       padding-top: 2%;
-      width: 40vw;
+      max-width: 40vw;
       background-color: var(--cuarto);
       padding: 10px;
       border-radius: 20px;
@@ -375,71 +388,85 @@ section p {
 @media all and (max-width: 599px) {
 
       .marca {
-            width: 20%;
-            float: left;
-            height: 20%;
-
-      }
-
-
-      #btnes_scroll {
-            width: 100%;
+            max-width: 60px;
             float: none;
-            margin-right: 0;
+            max-height: 60px;
+
       }
 
-      #btn_hamburguesa {
-            display: block;
-            height: 25px;
-            width: 25px;
-            float: right;
-            color: var(--terciario);
-            box-sizing: border-box;
+      .btn_close, .btn_open{
+            display:block;
+            border: 0;
+            font-size: 1.5rem;
+            background-color: var(--secundario);
+            color: var(--bgcolor);
+            width: 2rem;
+            cursor: pointer;
       }
-
-      #btn_hamburguesa a span {
-            font-weight: lighter;
-            font-size: 15px;
-            
+      
+      .btnes_scroll {
+            opacity: 0;
+            visibility: hidden;
       }
-
-      #btnes_scroll ul li a {
-            width: 100%;
-            height: 20px;
+     
+            .btnes_scroll {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            float:none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
             color: var(--terciario);
             background-color: var(--secundario);
+            padding: 1rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+      }
+
+      .btnes_scroll.visible{
+            opacity: 1;
+            visibility: visible;
+      }
+
+      .nav_order {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+      }
+
+      .btnes_scroll ul li a {
+            width: 40vw;
+            color: var(--terciario);
             padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            font-size: 1rem;
+            height:100% ;    
+            font-family: sans-serif;        
       }
 
-      
-      #btnes_scroll ul li {
-            width: 20%;      
-      }
-
-      
-      #btnes_scroll ul{
-            display: flex;
-            flex-direction: column;
-            align-items: end;   
-      }
-
-      .nav_order{
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            justify-content: start;
+      .btnes_scroll ul li {
+            max-width: 100%; 
+            height: 50px;
       }
 
       header {
             height: 30px;
       }
 
+      #layer {
+            height: 30vh;
+            max-width: 100vw;
+            background-image: url('../img5/layer.png');
+            background-size: 100%;
+            /*quiero agregarle opacidad con otra capa*/
+      }
+
       .titles {
-            height: 70px;
+            height: 50px;
             max-width: 100vw;
             background-color: var(--secundario);
             color: var(--bgcolor);
@@ -451,26 +478,27 @@ section p {
       }
 
       .subtitle {
-            max-width: 100vw;
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--secundario);
-            letter-spacing: 5px;
+            font-size: 1rem;
+            text-align: center;
 
       }
 
       div h1 {
-            font-size: 50px;
-            font-weight: bolder;
-            font-style: italic;
+            font-size: 25px;
             letter-spacing: 5px;
       }
 
       div h2 {
-            font-size: 30px;
-            font-weight: bolder;
-            font-style: italic;
+            font-size: 15px;
+
             letter-spacing: 5px;
+      }
+
+      .img-center {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+
       }
 
       .img_story {
@@ -478,12 +506,11 @@ section p {
       }
 
       .ajustar_img_carousel {
-            width: 35%;
+            width: 100%;
       }
 
       #imagenes_portada {
-            height: 520px;
-            max-width: 100vw;
+            height: 300px;
       }
 
       #box_info {
@@ -524,15 +551,6 @@ section p {
             margin-top: 5px;
       }
 
-      #layer {
-            height: 100vh;
-            max-width: 100vw;
-            background-image: url('../img5/layer.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            /*quiero agregarle opacidad con otra capa*/
-      }
-
       #nosotros {
             height: fit-content;
             max-width: 100vw;
@@ -545,59 +563,87 @@ section p {
             margin: 0;
       }
 
+      .order {
+            text-align: justify;
+      }
+
       .cont_us {
+            width: 100%;
+            display: flex;
+            text-align: left;
+            flex-wrap: wrap;
+            justify-content: center
+            margin-top: 10px;
+      }
+
+      .cont_us2 {
             max-width: 100vw;
             display: flex;
             text-align: left;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 10px;
+            flex-direction: column-reverse;
       }
 
       .txt_us {
             padding-top: 2%;
-            max-width: 100%;
+            max-width: 100vw;
             background-color: var(--cuarto);
             padding: 10px;
             border-radius: 20px;
       }
 
+      /*--------------------------------------------------*/
+      /* contenido contacto*/
       .cajabootstrap {
-            height: 500px;
-            max-width: 100vw;
+            height: 550px;
+            width: 100%;
 
       }
 
       #contenedorboot {
             height: fit-content;
+            width: 100%;
       }
 
       #modulo1,
       #modulo2 {
             height: fit-content;
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
       }
 
       #img_contacto {
-            width: 20vw;
+            width: 0;
+            height: 0;
+            visibility: hidden;
 
       }
 
+
       #columna2 {
-            width: 50vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
       }
 
       #colum_mod1 {
-            padding-top: 5px;
+            padding-top: 0px;
       }
 
+      /*Fin Contenido Contacto*/
+      /*------------------------------------------------*/
       /*#pesoideal {
             height: 300px;
             background-color: chocolate; 
       }*/
+      /*------------------------------------------------*/
+      /*conteino INFO*/
       #info {
             height: fit-content;
-            max-width: 100vw;
+            width: 100%;
 
       }
 
@@ -640,7 +686,7 @@ section p {
 
       .piecontacto {
             height: 100px;
-            max-width: 100vw;
+            width: 100%;
             margin: 0;
 
             margin-bottom: 0;
@@ -648,9 +694,9 @@ section p {
 
       .contacto {
 
-            max-width: 100vw;
+            width: 100%;
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
       }
 
       footer div i {
@@ -683,5 +729,8 @@ section p {
       section p {
             margin: 0;
       }
+
+      /*Fin contenido INFO*/
 }
-      /*end media -599*/
+
+/*end media -599*/

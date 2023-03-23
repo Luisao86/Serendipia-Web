@@ -5,6 +5,8 @@
     <script type="text/javascript" src="js/unidad7.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- icon pestaña -->
+    <link rel="shortcut icon" href="img5/Logo_icon.ico">
     <!-- archivo css bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- FIN CSS Bootstrap-->
@@ -15,8 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <!-- iconos-->
     <link rel="stylesheet" href="iconos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!--fin iconos-->
     <title>Serendipia</title>
+    
 </head>
 
 <body>
@@ -24,21 +28,18 @@
         <div>
             <img class="marca" src="img5/LOGO.png" alt="IconoDeMarca">
         </div>
-        <div class="nav_order">
-            <nav id="btn_hamburguesa">
-                <a onclick="btnHambur()"><span class="icon-menu"></span></a>
-            </nav>
-            <nav id="btnes_scroll" style="display:block;">
-                <ul>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#pesoideal">Tu peso</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#info">Info</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+        <button class="btn_open" id="btn_open"><i class="bi bi-list"></i></button>
+        <nav class="btnes_scroll" id="btnes_scroll">
+            <button class="btn_close" id="btn_close"><i class="bi bi-x-circle"></i></button>
+            <ul class="nav_order">
+                <li><a href="#nosotros" id="primero">Nosotros</a></li>
+                <li><a href="#pesoideal" id="segundo">Tu peso</a></li>
+                <li><a href="#productos" id="tercero">Productos</a></li>
+                <li><a href="#info" id="cuarto">Info</a></li>
+                <li><a href="#contacto" id="quinto">Contacto</a></li>
 
-                </ul>
-            </nav>
-        </div>
+            </ul>
+        </nav>
     </header>
     <section id="layer" class="ajustar_img"></section>
     <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<seguire agregando secciones>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
@@ -56,7 +57,7 @@
                 <div>
                     <h2 class="subtitle">Serendipia</h2>
                 </div>
-                <div>
+                <div class="order">
                     <h5> Una marca nacida del amor y el placer de preparar y disfrutar de
                         comidas veganas. Creemos firmemente que todos deben poder disfrutar de esta opción desde sus
                         casas,
@@ -74,12 +75,12 @@
     </section>
     <!-- ----------------------------------------------------------------------------------------------------------- -->
     <section id="history">
-        <div class="cont_us">
+        <div class="cont_us2">
             <div class="txt_us">
                 <div>
                     <h3 class="subtitle">Historia del veganismo</h3>
                 </div>
-                <div class="txt_us">
+                <div class="txt_us order">
                     <p>
                         El veganismo es un movimiento que busca respetar los derechos de los animales y eliminar
                         los productos de origen animal de la dieta y el estilo de vida. Se originó en Gran Bretaña
@@ -94,7 +95,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="img-center">
                 <img class="img_story" src="./img5/story.jpg" alt="Veganismo">
             </div>
         </div>
@@ -255,7 +256,7 @@
     </section>
     </div>
     <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-    <script type="text/javascript" src="js/boton_hamburguesa.js"></script>
+    <script type="text/javascript" src="js/burger_btn.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 </body>
 
